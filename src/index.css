@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply flex w-screen h-screen items-center justify-center bg-[#d0c7ba] font-bold text-black;
+  }
+  form {
+    @apply py-12 px-40  border-black  shadow-lg border-8 bg-[#ffffff] text-center;
+  }
+  input {
+    @apply block  w-full bg-white text-black  p-2 border-2 border-black;
+  }
+  h3 {
+    @apply text-left;
+  }
+
+  input:focus {
+    @apply border-2 border-black;
+  }
+  /* button {
+    @apply border border-[#c6af50] bg-[#c6af50] py-4 px-10   text-black font-semibold shadow-none mb-4;
+  } */
+  h1 {
+    @apply font-bold text-3xl mb-8;
+  }
+  h6 {
+    @apply italic;
+  }
+  a {
+    @apply underline;
+  }
+  span {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    @apply p-10 bg-black w-full;
+  }
+  .button {
+    @apply bg-black py-2  text-white shadow-md  font-semibold my-2  mb-4 px-24 text-base;
+  }
+  .formfield {
+    @apply mb-3;
+  }
+}
