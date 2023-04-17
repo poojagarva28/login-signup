@@ -20,7 +20,7 @@ const Routes = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    component: <CheckLogin /> ? <Dashboard /> : <Login />,
+    element: <CheckLogin /> === "true" ? <Dashboard /> : <Login />,
   },
 ]);
 
